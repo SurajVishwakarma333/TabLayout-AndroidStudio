@@ -12,6 +12,7 @@ _italic text_
 
 `adding code`
 
+[adding link](url)
 
 
 
