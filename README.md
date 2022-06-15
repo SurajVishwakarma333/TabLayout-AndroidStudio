@@ -113,7 +113,7 @@ This example demonstrates how do I create a Tab Layout in android app.
        
 **Step 6 – Now create the fragments and the layouts (Right click on the project >> New >> Fragment >> Blank**
 
-a) FootBall.java
+> a) FootBall.java
 
       import android.os.Bundle;
       import android.support.v4.app.Fragment;
@@ -150,7 +150,7 @@ a) FootBall.java
      </FrameLayout>
       
       
-b) Cricket.java
+> b) Cricket.java
 
 
       import android.os.Bundle;
@@ -170,7 +170,7 @@ b) Cricket.java
       } 
       
       
-fragment_cricket.xml
+**fragment_cricket.xml**
 
 
      <?xml version="1.0" encoding="utf-8"?>
@@ -189,7 +189,7 @@ fragment_cricket.xml
      </FrameLayout>
       
       
-**c) NBA.java**
+> c) NBA.java
 
 
       import android.os.Bundle;
@@ -209,7 +209,7 @@ fragment_cricket.xml
       }
       
       
-fragment_nba.xml
+**fragment_nba.xml**
 
 
      <?xml version="1.0" encoding="utf-8"?>
@@ -229,12 +229,6 @@ fragment_nba.xml
      </FrameLayout>
       
      
-
-
-
-
-
-
 
 
 
