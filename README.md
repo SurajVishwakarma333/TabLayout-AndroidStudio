@@ -14,17 +14,17 @@ _italic text_
 
 [adding link](url)
 
-- adding bulleted list1
-- adding bulleted list2
-- adding bulleted list3
+- add bulleted list1
+- add bulleted list2
+- add bulleted list3
 
-1. adding a numbered list1
-2. adding a numbered list2
-3. adding a numbered list3
+1. add a numbered list1
+2. add a numbered list2
+3. add a numbered list3
 
-- [ ] adding link
-- [ ] wsedrt
-- [ ] asdefrghj
+- [ ] add a task list1
+- [ ] add a task list2
+- [ ] add a task list3
 
 
 
