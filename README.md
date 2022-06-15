@@ -1,5 +1,6 @@
 # TabLayout-AndroidStudio
 
+Normal text
 
 ### highlight
 
