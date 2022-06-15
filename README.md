@@ -10,6 +10,7 @@ _italic text_
 
 > quote
 
+`adding code`
 
 
 
