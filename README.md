@@ -6,32 +6,34 @@ This example demonstrates how do I create a Tab Layout in android app.
 
 **Step 2 : Add the following dependency to create a tab layout**
 
-  `implementation 'com.android.support:design:28.0.0'`
+      implementation 'com.android.support:design:28.0.0'
   
 **Step 3 − Add the following code to res/layout/activity_main.xml.**
 
-`<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-   xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   tools:context=".MainActivity">
-   <android.support.design.widget.TabLayout
-      android:id="@+id/tabLayout"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:background="#1db995">
-   </android.support.design.widget.TabLayout>
-   <android.support.v4.view.ViewPager
-      android:id="@+id/viewPager"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/tabLayout"
-      android:layout_centerInParent="true"
-      android:layout_marginTop="100dp"
-      tools:layout_editor_absoluteX="8dp" />
-</RelativeLayout>`
+      <?xml version="1.0" encoding="utf-8"?>
+      <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        
+        <android.support.design.widget.TabLayout
+          android:id="@+id/tabLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#1db995">
+        </android.support.design.widget.TabLayout>
+        
+        <android.support.v4.view.ViewPager
+          android:id="@+id/viewPager"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tabLayout"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="100dp"
+          tools:layout_editor_absoluteX="8dp" />
+       </RelativeLayout>
 
 **Step 4 − Add the following code to src/MainActivity.java**
 
