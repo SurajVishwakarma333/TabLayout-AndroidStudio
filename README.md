@@ -1,12 +1,10 @@
 # TabLayout-Android Studio
 
-**This example demonstrates how do I create a Tab Layout in android app.**
+### This example demonstrates how do I create a Tab Layout in android app.
 
-### Step 1 :
-Create a new project in Android Studio, go to File ⇒ New Project and fill all required details to create a new project.
+**Step 1 : Create a new project in Android Studio, go to File ⇒ New Project and fill all required details to create a new project.**
 
-### Step 2 :
-Add the following dependency to create a tab layout −
+**Step 2 : Add the following dependency to create a tab layout**
 
   `implementation 'com.android.support:design:28.0.0'`
   
