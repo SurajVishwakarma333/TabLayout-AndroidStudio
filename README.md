@@ -1,38 +1,4 @@
-Normal Text 
-
-# highlighted heading
-
-### heading text
-
-**bold text**
-
-_italic text_
-
-> quote
-
-`adding code`
-
-[adding link](url)
-
-- add bulleted list1
-- add bulleted list2
-- add bulleted list3
-
-1. add a numbered list1
-2. add a numbered list2
-3. add a numbered list3
-
-- [ ] add a task list1
-- [ ] add a task list2
-- [ ] add a task list3
-
-
-
-
-
-
-
-
+# TabLayout-Android Studio
 
 
 
