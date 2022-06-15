@@ -77,162 +77,158 @@ This example demonstrates how do I create a Tab Layout in android app.
       
 **Step 5 – Create a java class(MyAdapter.java) and add the following code**
 
-import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentManager;
-class MyAdapter extends FragmentPagerAdapter {
-   Context context;
-   int totalTabs;
-   public MyAdapter(Context c, FragmentManager fm, int totalTabs) {
+      import android.content.Context;
+      import android.support.v4.app.Fragment;
+      import android.support.v4.app.FragmentPagerAdapter;
+      import android.support.v4.app.FragmentManager;
+      class MyAdapter extends FragmentPagerAdapter {
+       Context context;
+       int totalTabs;
+      public MyAdapter(Context c, FragmentManager fm, int totalTabs) {
       super(fm);
       context = c;
       this.totalTabs = totalTabs;
-   }
-   @Override
-   public Fragment getItem(int position) {
-      switch (position) {
-         case 0:
-            Football footballFragment = new Football();
-         return footballFragment;
-         case 1:
-            Cricket cricketFragment = new Cricket();
-         return cricketFragment;
-         case 2:
-            NBA nbaFragment = new NBA();
-         return nbaFragment;
-         default:
-         return null;
       }
-   }
-   @Override
-   public int getCount() {
-      return totalTabs;
-   }
-}
-Step 6 – Now create the fragments and the layouts (Right click on the project >> New >> Fragment >> Blank −
+      @Override
+      public Fragment getItem(int position) {
+         switch (position) {
+           case 0:
+              Football footballFragment = new Football();
+              return footballFragment;
+           case 1:
+              Cricket cricketFragment = new Cricket();
+              return cricketFragment;
+           case 2:
+              NBA nbaFragment = new NBA();
+              return nbaFragment;
+              default:
+              return null;
+             }
+           }
+        @Override
+        public int getCount() {
+        return totalTabs;
+        }
+       }
+       
+**Step 6 – Now create the fragments and the layouts (Right click on the project >> New >> Fragment >> Blank**
 
 a) FootBall.java
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-public class Football extends Fragment {
-   public Football() {
-      // Required empty public constructor
-   }
-   @Override
-   public View onCreateView(LayoutInflater inflater, ViewGroup container,
-    Bundle savedInstanceState) {
-      return inflater.inflate(R.layout.fragment_football, container, false);
-   }
-}
-fragment_football.xml
+      import android.os.Bundle;
+      import android.support.v4.app.Fragment;
+      import android.view.LayoutInflater;
+      import android.view.View;
+      import android.view.ViewGroup;
+      public class Football extends Fragment {
+       public Football() {
+       // Required empty public constructor
+       }
+      @Override
+       public View onCreateView(LayoutInflater inflater, ViewGroup container,
+       Bundle savedInstanceState) {
+       return inflater.inflate(R.layout.fragment_football, container, false);
+       }
+      }
+      
+**fragment_football.xml**
 
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   tools:context=".Football">
-   <!-- TODO: Update blank fragment layout -->
-   <TextView
+     <?xml version="1.0" encoding="utf-8"?>
+     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:textAlignment="center"
-      android:text="Football Fragment"
-      android:textSize="16sp"
-      android:textStyle="bold"/>
-</FrameLayout>
+      tools:context=".Football">
+      <!-- TODO: Update blank fragment layout -->
+      <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Football Fragment"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+     </FrameLayout>
+      
+      
 b) Cricket.java
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-public class Cricket extends Fragment {
-   public Cricket() {
+
+      import android.os.Bundle;
+      import android.support.v4.app.Fragment;
+      import android.view.LayoutInflater;
+      import android.view.View;
+      import android.view.ViewGroup;
+      public class Cricket extends Fragment {
+       public Cricket() {
       // Required empty public constructor
-   }
-   @Override
-   public View onCreateView(LayoutInflater inflater, ViewGroup container,
-    Bundle savedInstanceState) {
-      return inflater.inflate(R.layout.fragment_cricket, container, false);
-   }
-}
+       }
+      @Override
+       public View onCreateView(LayoutInflater inflater, ViewGroup container,
+       Bundle savedInstanceState) {
+       return inflater.inflate(R.layout.fragment_cricket, container, false);
+       }
+      } 
+      
+      
 fragment_cricket.xml
 
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   tools:context=".Cricket">
-   <TextView
+
+     <?xml version="1.0" encoding="utf-8"?>
+     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:textAlignment="center"
-      android:text="Cricket Fragment"
-      android:textSize="16sp"
-      android:textStyle="bold"/>
-</FrameLayout>
-c) NBA.java
+      tools:context=".Cricket">
+      <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Cricket Fragment"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+     </FrameLayout>
+      
+      
+**c) NBA.java**
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-public class NBA extends Fragment {
-   public NBA() {
-      // Required empty public constructor
-   }
-   @Override
-   public View onCreateView(LayoutInflater inflater, ViewGroup container,
-    Bundle savedInstanceState) {
-      return inflater.inflate(R.layout.fragment_nb, container, false);
-   }
-}
+
+      import android.os.Bundle;
+      import android.support.v4.app.Fragment;
+      import android.view.LayoutInflater;
+      import android.view.View;
+      import android.view.ViewGroup;
+      public class NBA extends Fragment {
+       public NBA() {
+       // Required empty public constructor
+       }
+       @Override
+       public View onCreateView(LayoutInflater inflater, ViewGroup container,
+       Bundle savedInstanceState) {
+       return inflater.inflate(R.layout.fragment_nb, container, false);
+       }
+      }
+      
+      
 fragment_nba.xml
 
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   tools:context=".NBA">
-   <!-- TODO: Update blank fragment layout -->
-   <TextView
+
+     <?xml version="1.0" encoding="utf-8"?>
+     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:textAlignment="center"
-      android:text="NBA Fragment"
-      android:textSize="16sp"
-      android:textStyle="bold"/>
-</FrameLayout>
-Step 7 - Add the following code to androidManifest.xml
-
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="app.com.sample">
-   <application
-      android:allowBackup="true"
-      android:icon="@mipmap/ic_launcher"
-      android:label="@string/app_name"
-      android:roundIcon="@mipmap/ic_launcher_round"
-      android:supportsRtl="true"
-      android:theme="@style/AppTheme">
-      <activity android:name=".MainActivity">
-         <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>
-      </activity>
-   </application>
-</manifest>
+      tools:context=".NBA">
+      <!-- TODO: Update blank fragment layout -->
+      <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="NBA Fragment"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+     </FrameLayout>
+      
+     
 
 
 
