@@ -1,6 +1,6 @@
 Normal Text 
 
-# HeadingHighlight
+# highlighted heading
 
 ### heading text
 
