@@ -8,9 +8,9 @@ This example demonstrates how do I create a Tab Layout in android app.
 
   `implementation 'com.android.support:design:28.0.0'`
   
-Step 3 − Add the following code to res/layout/activity_main.xml.
+**Step 3 − Add the following code to res/layout/activity_main.xml.**
 
-<?xml version="1.0" encoding="utf-8"?>
+`<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
    xmlns:android="http://schemas.android.com/apk/res/android"
    xmlns:tools="http://schemas.android.com/tools"
@@ -31,8 +31,9 @@ Step 3 − Add the following code to res/layout/activity_main.xml.
       android:layout_centerInParent="true"
       android:layout_marginTop="100dp"
       tools:layout_editor_absoluteX="8dp" />
-</RelativeLayout>
-Step 4 − Add the following code to src/MainActivity.java
+</RelativeLayout>`
+
+**Step 4 − Add the following code to src/MainActivity.java**
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
